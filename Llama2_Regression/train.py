@@ -121,5 +121,7 @@ def main():
 
     trainer.model.save_pretrained(args.output_dir)
 
+    torch.save(trainer.model.score.state_dict(), "./score.ckpt")
+    
 if __name__ == "__main__":
     main()

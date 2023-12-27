@@ -32,6 +32,8 @@ def preprocess(data, max_length=512):
 
     inputs_ids = []
     attention_mask = []
+    for key in batch:
+        batch[key] = batch[key].to(device)
     for i in range(data_size):
         text = title[i] + '\n' + content[i]
         tokenized_inputs = tokenizer(text, add_special_tokens=False, max_length=max_length, truncation=True)

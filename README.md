@@ -31,3 +31,13 @@ For inference
 ```
 python LLama2_classification/inference.py
 ```
+## Sentence Classification experiment
+For model training
+```
+bash run_train.sh
+```
+
+For inference
+```
+bash run_eval.sh
+```

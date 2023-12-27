@@ -44,3 +44,62 @@ For inference
 bash run_eval.sh
 ```
 refer to the ipynb file for reference
+
+# Github directory structure
+
+```bash
+ADL_final
+├── LLama2_classification
+│   ├── inference.py
+│   ├── train.py
+│   └── utils.py
+├── LLama2_instruction_tuning
+│   ├── README.md
+│   ├── draw.py
+│   ├── ppl.py
+│   ├── predict.py
+│   ├── requirement.txt
+│   ├── run.sh
+│   ├── train.py
+│   └── utils.py
+├── Llama2_Regression
+│   ├── eval.py
+│   ├── inference_demo.py
+│   ├── predict.py
+│   ├── train.py
+│   └── utils.py
+├── README.md
+├── crawl
+│   └── crawl.py
+├── data
+│   ├── news_data.json
+│   ├── total.json
+│   ├── total_views.json
+│   ├── train.json
+│   └── val.json
+├── demo
+│   ├── crawl.py
+│   ├── demo.py
+│   ├── score.pt
+│   └── utils.py
+├── display.py
+├── distribution.png
+├── distribution2.png
+├── roberta_sequence_classification
+│   ├── classification.ipynb
+│   ├── requirements.txt
+│   ├── run_classification.py
+│   ├── run_eval.sh
+│   └── run_train.sh
+└── utlis
+    ├── define_class.py
+    ├── get_views.py
+    ├── split_class.py
+    └── split_view.py
+```
+# Demo
+```
+cd demo
+streamlit run demo.py --server.address=0.0.0.0
+# click on the link: http://0.0.0.0:8501
+```

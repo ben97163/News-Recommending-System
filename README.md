@@ -1,9 +1,10 @@
-## News Crawling
+# News Crawling
 For preparing news data
 ```
 python crawl/crawl.py 
 ```
 
+# Taiwan-LLaMa
 ## Regression experiment
 For model training
 ```
@@ -18,4 +19,15 @@ python Llama2_Regression/predict.py --peft_path "trained lora weight" --eval_dat
 For evaluation
 ```
 python Llama2_Regression/eval.py --reference_file "ground truth data" --prediction_file "result from inferece"
+```
+
+## Classification experiment
+For model training
+```
+python LLama2_classification/train.py --train_file "train_file" --test_file "test_file"
+```
+
+For inference
+```
+python LLama2_classification/inference.py
 ```

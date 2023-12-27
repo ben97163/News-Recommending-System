@@ -1,12 +1,21 @@
-# News Crawling
+## News Crawling
 For preparing news data
 ```
 python crawl/crawl.py 
 ```
 
-# Regression experiment
+## Regression experiment
 For model training
 ```
 python Llama2_Regression/train.py --train_data data/train.json --eval_data data/val.json --epoch 2 
 ```
 
+For inference
+```
+python Llama2_Regression/predict.py --peft_path "trained lora weight" --eval_data data/val.json 
+```
+
+For evaluation
+```
+python Llama2_Regression/eval.py --reference_file "ground truth data" --prediction_file "result from inferece"
+```
